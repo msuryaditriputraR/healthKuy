@@ -91,6 +91,40 @@ img {
     overflow: hidden;
 }
 
+/* === BUTTONS === */
+.btn-main {
+    background: var(--main-color);
+    color: hsl(0, 0%, 100%);
+    border-radius: .5rem;
+}
+
+.btn-main:hover {
+    background: linear-gradient(90deg, hsl(215, 90%, 45%) 0%, hsl(204, 71%, 52%) 65%);
+}
+
+.btn-alt {
+    background: hsla(215, 90%, 45%, .10);
+    color: hsl(215, 90%, 45%);
+    border-radius: .5rem;
+}
+
+.btn-alt:hover {
+    background: var(--main-color);
+    color: hsl(0, 0%, 100%);
+}
+
+.btn-outline {
+    border: 1px solid hsl(215, 90%, 45%);
+    color: hsl(215, 90%, 45%);
+    border-radius: .5rem;
+}
+
+.btn-outline:hover {
+    border: none;
+    background: var(--main-color);
+    color: hsl(0, 0%, 100%);
+}
+
 /* === Utilities Class === */
 .ml-auto {
     margin-left: auto;
@@ -133,13 +167,5 @@ nav {
 }
 
 .nav__register {
-    background: hsla(215, 90%, 45%, .10);
-    color: hsl(215, 90%, 45%);
     padding: .5rem 1rem;
-    border-radius: .5rem;
-}
-
-.nav__register:hover {
-    background: var(--main-color);
-    color: hsl(0, 0%, 100%);
 }
