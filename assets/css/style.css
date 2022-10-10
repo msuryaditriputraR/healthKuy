@@ -8,6 +8,7 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --main-color: linear-gradient(45deg, hsl(215, 90%, 45%) 0%, hsl(204, 71%, 52%) 90%);
+    --body-color: hsl(0, 0%, 98%);
     --title-color: hsl(227, 17%, 16%);
     --text-color: hsl(0, 0%, 54%);
     --text-color-dark: hsl(226, 14%, 49%);
@@ -51,6 +52,7 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--text-color);
+    background-color: var(--body-color);
 }
 
 ul {
@@ -122,6 +124,23 @@ img {
 /* === Utilities Class === */
 .ml-auto {
     margin-left: auto;
+}
+
+/* === Modifier Class === */
+.icon-red {
+    background-color: hsl(8, 100%, 97%);
+}
+
+.icon-green {
+    background-color: hsl(140, 56%, 95%);
+}
+
+.icon-yellow {
+    background-color: hsl(38, 100%, 95%);
+}
+
+.icon-blue {
+    background-color: hsl(204, 100%, 96%);
 }
 
 /*=============== HEADER ===============*/
@@ -208,7 +227,6 @@ nav {
     border-radius: 2.5rem 1rem 2.5rem 1rem;
 }
 
-
 .home__image>img {
     display: block;
     position: absolute;
@@ -289,4 +307,76 @@ nav {
     font-size: var(--small-font-size);
     text-transform: capitalize;
     margin: 0 1.5rem;
+}
+
+/*=============== SERVICE ===============*/
+.service__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service__title {
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: capitalize;
+}
+
+.service__desc {
+    width: 30ch;
+}
+
+.service__cards {
+    grid-template-columns: repeat(4, max-content);
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.service__card {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+}
+
+.service__card-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .25rem .35rem;
+    border-radius: .35rem;
+    margin-bottom: 1rem;
+}
+
+.service__card-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.service__card-title {
+    color: var(--title-color);
+    text-transform: capitalize;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 0.25rem;
+}
+
+.service__card-desc {
+    font-size: var(--small-font-size);
+    line-height: 1.35rem;
+    width: 26ch;
+    margin-bottom: 2.5rem;
+}
+
+.service__card-link {
+    color: hsl(22, 82%, 55%);
+    display: inline-flex;
+    column-gap: .5rem;
+    align-items: center;
+    transition: .3s;
+}
+
+.service__card-link:hover i {
+    transform: translateX(5px);
 }
