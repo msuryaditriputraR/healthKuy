@@ -154,6 +154,12 @@ header {
     display: flex;
     align-items: center;
     column-gap: 3rem;
+    transition: .4s;
+}
+
+.scroll-header {
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsla(0, 0%, 85%, .4);
 }
 
 nav {
