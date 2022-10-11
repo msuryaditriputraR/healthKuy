@@ -494,6 +494,68 @@ nav {
     text-underline-offset: .125rem;
 }
 
+/*=============== SERVICES ===============*/
+.services {
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    justify-content: center;
+    column-gap: 3.5rem;
+}
+
+.services__image {
+    position: relative;
+    background: var(--main-color);
+    height: 430px;
+    width: 320px;
+    border-radius: 1rem 2.5rem 1rem 2.5rem;
+}
+
+.services__image>img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    max-width: 380px;
+}
+
+.services__reasons {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.services__reason {
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+.services__icon {
+    background-color: hsl(213, 77%, 95%);
+    border-radius: .5rem;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+}
+
+.services__icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.services__title {
+    color: var(--title-color);
+    text-transform: capitalize;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.services__desc {
+    width: 28ch;
+    font-size: var(--smaller-font-size);
+}
+
 /*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
