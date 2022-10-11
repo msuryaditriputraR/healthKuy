@@ -114,6 +114,14 @@ img {
     opacity: 0;
 }
 
+.dot {
+    display: inline-block;
+    width: 3.5px;
+    height: 3.5px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+}
+
 /* === BUTTONS === */
 .btn-main {
     background: var(--main-color);
@@ -554,6 +562,104 @@ nav {
 .services__desc {
     width: 28ch;
     font-size: var(--smaller-font-size);
+}
+
+/*=============== ARTICLE ===============*/
+.article__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article__btn {
+    padding: .5rem 1rem;
+}
+
+.article__cards {
+    grid-template-columns: repeat(4, max-content);
+    margin: 3.5rem 0;
+    justify-content: space-between;
+}
+
+.article__card {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 8px 12px rgba(240, 240, 240, 0.05);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.article__card:hover .article__card-btn {
+    background: var(--main-color);
+    color: hsl(0, 0%, 100%);
+}
+
+.article__card-image {
+    background-color: var(--bg-color);
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.article__card-image>img {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    zoom: .85;
+}
+
+.article__card-body {
+    padding: 1rem .85rem;
+}
+
+.article__card-title {
+    text-transform: capitalize;
+    color: var(--title-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    width: 23ch;
+}
+
+.article__card-info {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: var(--small-font-size);
+    text-transform: capitalize;
+    margin-bottom: 0.25rem;
+}
+
+.article__card-category {
+    background: var(--main-color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.article__card-writer {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin: .5rem 0 1.5rem;
+}
+
+.article__card-avatar {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.article__card-name {
+    font-size: var(--small-font-size);
+}
+
+.article__card-btn {
+    display: block;
+    text-align: center;
+    padding: .5rem 0;
 }
 
 /*=============== SCROLL UP ===============*/
