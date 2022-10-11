@@ -668,6 +668,7 @@ nav {
     right: 3rem;
     bottom: -30%;
     background-color: var(--body-color);
+    border-radius: .25rem;
     box-shadow: 0 8px 12px hsla(0, 0%, 85%, .4);
     display: inline-flex;
     padding: .45rem;
