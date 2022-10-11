@@ -83,8 +83,35 @@ img {
     padding: 4.5rem 0 2rem;
 }
 
+.section-title {
+    text-transform: capitalize;
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.section-subtitle {
+    background: var(--main-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: var(--font-medium);
+    text-transform: capitalize;
+}
+
 .main {
     overflow: hidden;
+}
+
+.overlay {
+    background-color: hsla(209, 53%, 10%, .4);
+    position: absolute;
+    z-index: var(--z-tooltip);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .3s;
+    opacity: 0;
 }
 
 /* === BUTTONS === */
@@ -208,17 +235,9 @@ nav {
 }
 
 .home__title {
-    text-transform: capitalize;
     font-size: var(--biggest-font-size);
-    color: var(--title-color);
+    font-weight: var(--font-bold);
     margin-bottom: 1rem;
-}
-
-.home__subtitle {
-    background: var(--main-color);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: var(--font-medium);
 }
 
 .home__description {
@@ -328,13 +347,6 @@ nav {
     align-items: center;
 }
 
-.service__title {
-    color: var(--title-color);
-    font-size: var(--h1-font-size);
-    font-weight: var(--font-semi-bold);
-    text-transform: capitalize;
-}
-
 .service__desc {
     width: 30ch;
 }
@@ -391,6 +403,95 @@ nav {
 
 .service__card-link:hover i {
     transform: translateX(5px);
+}
+
+/*=============== DOCTOR ===============*/
+.doctor {
+    padding: 1.5rem 3.5rem;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 3.5rem;
+    align-items: center;
+}
+
+.doctor__cards {
+    grid-template-columns: repeat(2, max-content);
+    gap: 1.5rem;
+}
+
+.doctor__card {
+    background-color: var(--bg-color);
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.doctor__card:hover {
+    outline: 2px solid hsl(215, 90%, 45%);
+    outline-offset: .25rem;
+}
+
+.doctor__card:hover .overlay {
+    opacity: 1;
+}
+
+.doctor__card:hover .doctor__job {
+    bottom: 50%;
+}
+
+.doctor__image {
+    display: block;
+}
+
+.doctor__job {
+    position: absolute;
+    left: 50%;
+    bottom: -50%;
+    transform: translate(-50%, 50%);
+    color: hsl(0, 0%, 100%);
+    transition: .3s;
+    z-index: 11;
+}
+
+.doctor__desc {
+    font-size: var(--small-font-size);
+    margin-top: .5rem;
+}
+
+.doctor__numbers {
+    grid-template-columns: repeat(2, max-content);
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.doctor__number span {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    font-size: var(--h2-font-size);
+}
+
+.doctor__number p {
+    font-size: var(--small-font-size);
+}
+
+.doctor__btn {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.doctor__link {
+    background: var(--main-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+.doctor__link:hover {
+    text-decoration: underline;
+    text-decoration-color: hsl(204, 71%, 52%);
+    text-underline-offset: .125rem;
 }
 
 /*=============== SCROLL UP ===============*/
