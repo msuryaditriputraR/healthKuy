@@ -143,18 +143,6 @@ img {
     background-color: hsl(204, 100%, 96%);
 }
 
-/* === JS CLASSES === */
-.scroll-header {
-    background-color: hsl(0, 0%, 100%);
-    border-bottom: 1px solid hsla(0, 0%, 85%, .4);
-}
-
-.active-link {
-    background: var(--main-color);
-    -webkit-background-clip: text;
-    color: transparent !important;
-}
-
 /*=============== HEADER ===============*/
 header {
     width: 100vw;
@@ -195,6 +183,17 @@ nav {
 
 .nav__register {
     padding: .5rem 1rem;
+}
+
+.scroll-header {
+    background-color: hsl(0, 0%, 100%);
+    border-bottom: 1px solid hsla(0, 0%, 85%, .4);
+}
+
+.active-link {
+    background: var(--main-color);
+    -webkit-background-clip: text;
+    color: transparent !important;
 }
 
 /*=============== HOME ===============*/
@@ -392,4 +391,28 @@ nav {
 
 .service__card-link:hover i {
     transform: translateX(5px);
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 3rem;
+    bottom: -30%;
+    background-color: var(--body-color);
+    box-shadow: 0 8px 12px hsla(0, 0%, 85%, .4);
+    display: inline-flex;
+    padding: .45rem;
+    color: var(--title-color);
+    font-size: 1.25rem;
+    z-index: var(--z-tooltip);
+    transition: .3s;
+}
+
+.scrollup:hover {
+    transform: translateY(-.25rem);
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+    bottom: 3rem;
 }
