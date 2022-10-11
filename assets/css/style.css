@@ -779,6 +779,53 @@ nav {
     font-size: var(--small-font-size);
 }
 
+/*=============== FOOTER ===============*/
+.footer {
+    background-color: var(--title-color);
+    padding: 2.5rem 0;
+    background-image: url("../img/bg-footer.png");
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: right bottom;
+}
+
+.footer__container {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 4.5rem;
+}
+
+.footer__copy,
+.footer__link {
+    color: hsl(226, 14%, 49%);
+    font-size: var(--normal-font-size);
+}
+
+.footer__copy {
+    margin-top: 1rem;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    column-gap: 4.5rem;
+}
+
+.footer__title {
+    color: hsl(0, 0%, 100%);
+    font-weight: var(--font-medium);
+    font-size: var(--h3-font-size);
+}
+
+.footer__links {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: .35rem;
+}
+
+.footer__link:hover {
+    color: hsl(0, 0%, 100%);
+}
 
 
 /*=============== SCROLL UP ===============*/
