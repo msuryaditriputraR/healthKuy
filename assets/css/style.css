@@ -663,6 +663,125 @@ nav {
 }
 
 /*=============== SCROLL UP ===============*/
+.review {
+    grid-template-columns: repeat(2, max-content);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review__patients {
+    margin: 2rem 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.review__patient {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 8px 12px rgba(240, 240, 240, 0.05);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.review__patient-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.review__user {
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+}
+
+.review__user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: .5rem;
+}
+
+.review__user-name {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.review__star {
+    width: 15px;
+    margin-left: .15rem;
+}
+
+.review__text {
+    width: 48ch;
+    font-size: var(--small-font-size);
+}
+
+.review__btn {
+    padding: .5rem 1rem;
+}
+
+.review__image {
+    position: relative;
+    align-self: flex-end;
+    background: var(--main-color);
+    height: 400px;
+    width: 380px;
+    border-radius: 1rem 2.5rem 1rem 2.5rem;
+    margin-right: 4.5rem;
+}
+
+.review__image>img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -18.5%;
+    max-width: 525px;
+}
+
+.review__card {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -24px 27px 65px hsla(0, 0%, 85%, .4);
+    width: max-content;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    border-radius: .5rem;
+    position: absolute;
+    left: -15%;
+    top: -15%;
+}
+
+.review__card-img {
+    background-color: hsl(214, 78%, 95%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: grid;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.review__card-img img {
+    scale: 1.4;
+}
+
+.review__card-title {
+    color: var(--title-color);
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+.review__card-desc {
+    font-size: var(--small-font-size);
+}
+
+
+
+/*=============== SCROLL UP ===============*/
 .scrollup {
     position: fixed;
     right: 3rem;
